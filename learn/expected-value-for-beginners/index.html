@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expected Value (EV) for Beginners: The Math of Bets | e.casino</title>
+<meta name="description" content="Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.">
+<link rel="canonical" href="https://e.casino/learn/expected-value-for-beginners/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#0a0f1c">
+<meta property="og:site_name" content="e.casino">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Expected Value (EV) for Beginners: The Math of Every Bet">
+<meta property="og:description" content="Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.">
+<meta property="og:url" content="https://e.casino/learn/expected-value-for-beginners/">
+<meta property="og:image" content="https://e.casino/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/logo.svg">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css?v=20261102">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('ec:theme'));}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Expected Value (EV) for Beginners: The Math of Every Bet",
+"description": "Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.",
+"datePublished": "2026-11-02",
+"dateModified": "2026-11-02",
+"author": {
+"@type": "Organization",
+"name": "e.casino Editorial Team",
+"url": "https://e.casino/about/"
+},
+"publisher": {
+"@type": "Organization",
+"name": "e.casino",
+"url": "https://e.casino/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://e.casino/assets/img/logo.svg"
+}
+},
+"mainEntityOfPage": "https://e.casino/learn/expected-value-for-beginners/",
+"image": "https://e.casino/assets/img/og-image.svg",
+"articleSection": "Casino Math",
+"isAccessibleForFree": true
+}</script><script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://e.casino/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Learn",
+"item": "https://e.casino/learn/"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "Casino Math",
+"item": "https://e.casino/learn/#casino-math"
+},
+{
+"@type": "ListItem",
+"position": 4,
+"name": "Expected Value (EV) for Beginners: The Math of Every Bet",
+"item": "https://e.casino/learn/expected-value-for-beginners/"
+}
+]
+}</script>
+<script type="application/json" id="ec-meta">{
+"title": "Expected Value (EV) for Beginners: The Math of Bets",
+"h1": "Expected Value (EV) for Beginners: The Math of Every Bet",
+"description": "Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.",
+"category": "casino-math",
+"keywords": [
+"expected value",
+"expected value gambling",
+"EV formula",
+"negative expected value",
+"expected value roulette",
+"positive EV"
+],
+"readingMinutes": 7,
+"updated": "2026-11-02",
+"summary": [
+"Expected value is the probability-weighted average of every possible result: EV = sum of probability × outcome.",
+"A $10 bet on red in European roulette has an EV of −$10/37 ≈ −$0.27, and so does a $10 bet on a single number.",
+"EV adds up: the expected result of a session is EV per bet × number of bets, whatever pattern you bet in.",
+"EV is a long-run average, not a prediction; positive-EV casino situations exist but are rare and hard to exploit."
+],
+"faq": [
+{
+"q": "What is expected value in simple terms?",
+"a": "It is the average amount you would win or lose per bet if you could repeat the same bet an enormous number of times. You find it by multiplying each outcome by its probability and adding the results."
+},
+{
+"q": "Why is expected value negative for casino games?",
+"a": "Casino payouts are set slightly below the true odds of winning. That gap means the probability-weighted average of each bet is a small loss, which is the house edge in dollar terms."
+},
+{
+"q": "Does negative EV mean I will lose every time?",
+"a": "No. You can win any individual bet or session. Negative EV means that across many bets your average result drifts toward a loss of roughly the house edge times the amount wagered."
+},
+{
+"q": "Is blackjack insurance a good bet?",
+"a": "Not for a player using basic strategy. In an infinite-deck model, insurance wins 4/13 of the time at 2:1, giving an EV of 2 × 4/13 − 9/13 = −1/13, a loss of about 7.7% of every insurance dollar."
+}
+],
+"related": [
+"house-edge-explained",
+"law-of-large-numbers-casino",
+"betting-systems-tested"
+],
+"tool": "dice-lab",
+"kind": "article",
+"slug": "expected-value-for-beginners",
+"path": "/learn/expected-value-for-beginners/",
+"crumbs": [
+[
+"Learn",
+"/learn/"
+],
+[
+"Casino Math",
+"/learn/#casino-math"
+],
+[
+"Expected Value (EV) for Beginners: The Math of Every Bet",
+"/learn/expected-value-for-beginners/"
+]
+]
+}</script>
+</head>
+<body class=" is-article">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership &rarr;</a></div>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../" aria-label="e.casino home"><span>e<b>.</b>casino</span><small>Casino Math Academy</small></a>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../games/">Free Labs</a></li><li><a href="../../tools/">Tools</a></li><li><a href="../../videos/">Videos</a></li><li><a href="../../contests/">Contests</a></li><li><a href="../../responsible-gaming/">Play Safe</a></li></ul></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-gold btn-sm" href="../../partner/">Partner</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+</header>
+<main id="main">
+<div class="wrap section-tight">
+<div class="article-layout">
+<article>
+  <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../learn/">Learn</a></li><li><a href="../../learn/#casino-math">Casino Math</a></li></ol>
+  <div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">Math-checked</span><span class="badge">No affiliate links</span></div>
+  <h1>Expected Value (EV) for Beginners: The Math of Every Bet</h1>
+  <p class="lead">Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.</p>
+  <div class="article-meta"><span>By <a href="../../about/">e.casino Editorial Team</a></span><span>Updated <time datetime="2026-11-02">Nov 2, 2026</time></span><span>7 min read</span></div>
+  <div class="share mt1 no-print"><button class="btn btn-ghost btn-sm" data-share="x" type="button">Share on X</button><button class="btn btn-ghost btn-sm" data-share="facebook" type="button">Facebook</button><button class="btn btn-ghost btn-sm" data-share="linkedin" type="button">LinkedIn</button><button class="btn btn-ghost btn-sm" data-share="copy" type="button">Copy link</button></div>
+  <section class="takeaways" aria-label="Key takeaways"><h2>Key takeaways</h2><ul><li>Expected value is the probability-weighted average of every possible result: EV = sum of probability × outcome.</li><li>A $10 bet on red in European roulette has an EV of −$10/37 ≈ −$0.27, and so does a $10 bet on a single number.</li><li>EV adds up: the expected result of a session is EV per bet × number of bets, whatever pattern you bet in.</li><li>EV is a long-run average, not a prediction; positive-EV casino situations exist but are rare and hard to exploit.</li></ul></section>
+  <details class="toc toc-inline card"><summary><strong>On this page</strong></summary><ol class="mt1"><li><a href="#the-formula">The formula in one line</a></li><li><a href="#roulette-example">A casino example: $10 on red</a></li><li><a href="#ev-table">EV of common bets, per $10</a></li><li><a href="#many-outcomes">Bets with more than two outcomes</a></li><li><a href="#session-ev">From one bet to a whole night</a></li><li><a href="#ev-vs-reality">Expected value is not what will happen</a></li><li><a href="#insurance">Using EV to spot a bad deal: blackjack insurance</a></li><li><a href="#positive-ev">When is EV ever positive?</a></li><li><a href="#bottom-line">The bottom line</a></li></ol></details>
+  <div class="prose">
+<!--ec:content-->
+<p class="lede">Expected value (EV) is the average result of a bet if you could repeat it forever. You multiply each possible outcome by its probability and add them up. In a casino nearly every EV is negative, and that one number, not luck or streaks or gut feeling, decides where your money goes over time.</p>
+
+<h2 id="the-formula">The formula in one line</h2>
+<p>For any bet, list the outcomes, attach a probability to each, and take the weighted average.</p>
+<div class="formula">EV = (P(win) × profit if you win) − (P(lose) × stake)</div>
+<p>Start with a fair coin. You win $10 on heads and lose $10 on tails.</p>
+<p>EV = 0.5 × $10 − 0.5 × $10 = <strong>$0</strong>. Over many flips you expect to break even. That is what a fair bet looks like.</p>
+<p>Now a friend offers $11 on heads while you still risk $10 on tails. EV = 0.5 × $11 − 0.5 × $10 = <strong>+$0.50</strong> per flip. Flip 100 times and you expect to be up about $50. That half-dollar edge is exactly what casinos build into every game, pointed the other way.</p>
+
+<h2 id="roulette-example">A casino example: $10 on red</h2>
+<p>A European roulette wheel has 37 pockets: 18 red, 18 black, and a green zero. A red bet pays 1 to 1.</p>
+<p>EV = (18/37 × $10) − (19/37 × $10) = −$10/37 ≈ <strong>−$0.27</strong>.</p>
+<p>The zero is the whole story. Without it, red would be a coin flip. With it, you lose 27 cents per $10 bet on average, a 2.70% house edge.</p>
+<p>Now put $10 on a single number, which pays 35 to 1:</p>
+<p>EV = (1/37 × $350) − (36/37 × $10) = ($350 − $360) ÷ 37 ≈ <strong>−$0.27</strong>.</p>
+<p>Same EV, very different ride. Red wins almost half the time for small amounts. A single number usually loses and occasionally pays big. EV measures the average; it says nothing about how bumpy the path is. That is the job of variance, covered in <a href="../../learn/rtp-vs-volatility/">RTP vs. volatility</a>.</p>
+<p>On an American wheel with 0 and 00, the red bet becomes (18/38 × $10) − (20/38 × $10) ≈ −$0.53. One extra pocket doubles the expected loss.</p>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="ev-table">EV of common bets, per $10</h2>
+<div class="table-wrap"><table class="data">
+<caption>Expected value of a $10 bet (house edges from the standard calculations for each game)</caption>
+<thead><tr><th>Bet</th><th>How it pays</th><th>EV per $10</th></tr></thead>
+<tbody>
+<tr><td>Fair coin flip</td><td>50% to win 1:1</td><td>$0.00</td></tr>
+<tr><td>Baccarat, Banker</td><td>1:1 minus 5% commission</td><td>−$0.11</td></tr>
+<tr><td>Craps, Pass Line</td><td>1:1</td><td>−$0.14</td></tr>
+<tr><td>European roulette, red</td><td>18/37 to win 1:1</td><td>−$0.27</td></tr>
+<tr><td>European roulette, single number</td><td>1/37 to win 35:1</td><td>−$0.27</td></tr>
+<tr><td>American roulette, red</td><td>18/38 to win 1:1</td><td>−$0.53</td></tr>
+<tr><td>Blackjack insurance</td><td>4/13 to win 2:1</td><td>−$0.77</td></tr>
+<tr><td>Baccarat, Tie</td><td>8:1</td><td>−$1.44</td></tr>
+<tr><td>Craps, Any Seven</td><td>6/36 to win 4:1</td><td>−$1.67</td></tr>
+</tbody>
+</table></div>
+<p>Any Seven is easy to check yourself: EV per $1 = (1/6 × $4) − (5/6 × $1) = −$1/6, or −16.67%. On $10 that is −$1.67. You can test two-dice probabilities in the free <a href="../../games/dice-lab/">dice lab</a>.</p>
+
+<h2 id="many-outcomes">Bets with more than two outcomes</h2>
+<p>Many games have several prize levels. The formula is the same: weight every outcome by its probability, then subtract what you paid.</p>
+<p>Take a made-up $1 scratch ticket. One ticket in 5 wins $2, one in 50 wins $10, one in 1,000 wins $100, and the rest win nothing.</p>
+<p>Expected prize = (0.2 × $2) + (0.02 × $10) + (0.001 × $100) = $0.40 + $0.20 + $0.10 = $0.70. Subtract the $1 cost and EV = <strong>−$0.30</strong> per ticket. The ticket returns 70 cents on the dollar, a 30% house edge.</p>
+<p>Three mistakes trip people up here:</p>
+<ul>
+<li><strong>Mixing up profit and payout.</strong> A prize of $2 on a $1 ticket is a $1 profit. Use profit with stake, or payout with cost, but never mix them.</li>
+<li><strong>Confusing "to 1" with "for 1".</strong> 35 to 1 returns your stake plus $35. 35 for 1 returns $35 in total, which is only 34 to 1.</li>
+<li><strong>Using hopeful probabilities.</strong> EV is only as good as the probabilities you feed it. In casino games those are known exactly; in your head they rarely are.</li>
+</ul>
+
+<h2 id="session-ev">From one bet to a whole night</h2>
+<p>EV has a property that makes it powerful: it adds. The expected result of a session is just the EV per bet multiplied by the number of bets.</p>
+<div class="formula">Session EV = EV per bet × number of bets = −(house edge × total amount wagered)</div>
+<p>Make 200 bets of $10 on European red and you have wagered $2,000. Expected result: $2,000 × −1/37 = <strong>−$54.05</strong>.</p>
+<p>It does not matter whether those bets go on red, on single numbers, or on a mix. Every European roulette bet carries the same −2.70%, so $2,000 of action costs $54.05 on average however you slice it.</p>
+<p>It also does not matter what pattern you bet in. Raising after losses, lowering after wins, skipping spins: the formula only cares about the total wagered. That is why no betting system changes the expected result, as the <a href="../../learn/betting-systems-tested/">betting systems breakdown</a> shows in detail.</p>
+
+<h2 id="ev-vs-reality">Expected value is not what will happen</h2>
+<p>Consider a dice game: roll one die, win $5 on a six, lose $1 on anything else.</p>
+<p>EV = (1/6 × $5) − (5/6 × $1) = $0.83 − $0.83 = <strong>$0</strong>.</p>
+<p>Yet no single roll ever produces $0. You get +$5 or −$1. EV is the center of gravity of the outcomes, not an outcome itself. Over many rolls your average result per roll gets closer and closer to EV, which is the <a href="../../learn/law-of-large-numbers-casino/">law of large numbers</a> at work.</p>
+<p>Lottery tickets show the same gap. In a 6/49 game the jackpot odds are 1 in C(49,6) = 13,983,816. On a $2 ticket with a $5 million jackpot, the jackpot's contribution to EV is $5,000,000 ÷ 13,983,816 ≈ $0.36. Smaller prizes add a little back; taxes and shared jackpots take some away. The ticket is still deeply negative, even though someone eventually wins.</p>
+
+<h2 id="insurance">Using EV to spot a bad deal: blackjack insurance</h2>
+<p>When the dealer shows an ace, you may be offered insurance: a side bet of up to half your stake that pays 2:1 if the dealer has blackjack.</p>
+<div class="callout math"><strong>The math:</strong> In an infinite-deck model, 4 of 13 card ranks count as ten (10, J, Q, K), so the dealer completes blackjack with probability 4/13. EV per $1 of insurance = (4/13 × $2) − (9/13 × $1) = −$1/13 ≈ −7.7%. A $5 insurance bet on a $10 hand has an EV of about −$0.38.</div>
+<p>The offer feels protective, and that is the trick. It is a separate bet with a house edge more than ten times larger than basic-strategy blackjack itself. The same math applies to taking even money on your own blackjack.</p>
+
+<h2 id="positive-ev">When is EV ever positive?</h2>
+<p>Rarely, and never by accident.</p>
+<ul>
+<li><strong>Card counting.</strong> As cards leave a blackjack shoe, a deck rich in tens and aces can tip EV slightly in the player's favor. The edge is small, swings are large, and casinos can shuffle early or ban counters. See <a href="../../learn/card-counting-explained/">card counting explained</a>.</li>
+<li><strong>Rare video poker pay tables.</strong> Full-pay Deuces Wild returns 100.76% with perfect strategy, an EV of about +$0.08 per $10. The pay table is hard to find, and small strategy mistakes can easily wipe out the edge.</li>
+<li><strong>Your generous friend.</strong> The $11-for-$10 coin flip. Casinos do not offer it.</li>
+</ul>
+<div class="callout warn"><strong>Reality check:</strong> A positive EV does not guarantee profit either. It means you win on average over a large number of bets, with real risk of losing along the way.</div>
+
+<h2 id="bottom-line">The bottom line</h2>
+<p>Expected value is the most useful number in gambling math. Multiply outcomes by probabilities, add them up, and you know what a bet costs on average, before you place it.</p>
+<p>Almost every casino bet has negative EV, and session EV equals the house edge times everything you wager. Use EV to compare bets, to recognize bad side bets, and to price your entertainment honestly. If chasing that number back to zero ever feels urgent, <a href="../../responsible-gaming/#help">support is available</a>.</p>
+<!--/ec:content-->
+  </div>
+  <div class="band mt3"><div><span class="badge badge-brand">Free lab · no money</span><h2 class="mt1" style="margin-top:10px">Dice &amp; Craps Probability Lab</h2><p class="muted mb0">Roll two dice thousands of times and compare against the math. Put this guide into practice right now.</p></div><div><a class="btn btn-primary btn-lg btn-block" href="../../games/dice-lab/">🎲 Open the lab</a></div></div>
+  <section class="faq mt3"><h2>Frequently asked questions</h2><details><summary>What is expected value in simple terms?</summary><div><p>It is the average amount you would win or lose per bet if you could repeat the same bet an enormous number of times. You find it by multiplying each outcome by its probability and adding the results.</p></div></details><details><summary>Why is expected value negative for casino games?</summary><div><p>Casino payouts are set slightly below the true odds of winning. That gap means the probability-weighted average of each bet is a small loss, which is the house edge in dollar terms.</p></div></details><details><summary>Does negative EV mean I will lose every time?</summary><div><p>No. You can win any individual bet or session. Negative EV means that across many bets your average result drifts toward a loss of roughly the house edge times the amount wagered.</p></div></details><details><summary>Is blackjack insurance a good bet?</summary><div><p>Not for a player using basic strategy. In an infinite-deck model, insurance wins 4/13 of the time at 2:1, giving an EV of 2 × 4/13 − 9/13 = −1/13, a loss of about 7.7% of every insurance dollar.</p></div></details></section>
+  <div class="ad-slot" data-slot="articleEnd"></div>
+  <div class="card mt3 author-box"><div class="author-avatar" aria-hidden="true">e</div><div><strong>e.casino Editorial Team</strong><p class="muted mb0" style="font-size:.93rem">Every figure in this guide is derived from first principles or standard published game math and cross-checked in our simulators. We take no money from casinos and publish no affiliate links. Spotted an error? <a href="../../contact/?topic=Correction">Send a correction</a> — see our <a href="../../editorial-policy/">editorial policy</a>.</p></div></div>
+  <section class="mt3"><h2>Keep learning</h2><div class="grid g3"><a class="card card-link" href="../../learn/house-edge-explained/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>House Edge Explained: The Number Every Casino Game Is Built On</h3><p class="muted">What the house edge is, where it comes from, and how to turn it into dollars per hour, with worked examples for roulette, blackjack, baccarat and slots.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/law-of-large-numbers-casino/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>The Law of Large Numbers: Why the Casino Wins Over Time</h3><p class="muted">The law of large numbers explains why a small house edge becomes a near-certain casino profit. See how your odds of being ahead shrink as the bets pile up.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/betting-systems-tested/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">8 min</span></div><h3>Betting Systems Tested: Fibonacci, D&#x27;Alembert, Labouchère and Paroli</h3><p class="muted">Four classic roulette betting systems, from Fibonacci to Paroli, put to the math test. Each one reshapes your results, and none of them changes the house edge.</p><span class="go">Read guide &rarr;</span></a></div></section>
+  <div class="rg-strip mt3"><span class="age-badge">18+</span><span><strong>Educational content only.</strong> e.casino offers no real-money gambling. If gambling is causing problems for you or someone you know, <a href="../../responsible-gaming/#help">free, confidential help is available 24/7</a>.</span></div>
+</article>
+<aside class="sidebar" aria-label="Sidebar">
+  <div class="card toc" id="side-toc"><strong>On this page</strong></div>
+  <a class="card card-link" href="../../games/dice-lab/"><div class="card-icon" aria-hidden="true">🎲</div><h3>Dice &amp; Craps Probability Lab</h3><p class="muted">Roll two dice thousands of times and compare against the math.</p><span class="go">Open &rarr;</span></a>
+  <div class="ad-slot" data-slot="sidebar"></div>
+  <div class="card card-gold"><span class="badge badge-gold">Free kit</span><h3 class="mt1">Printable strategy card</h3><p class="muted" style="font-size:.92rem">Blackjack chart + house-edge cheat sheet.</p><a class="btn btn-gold btn-sm btn-block" href="../../academy/">Get it free</a></div>
+</aside>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div id="footer-rich"></div>
+    <nav class="footer-links" aria-label="Footer"><a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../editorial-policy/">Editorial policy</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer &amp; trademarks</a> · <a href="../../cookies/">Cookies</a> · <a href="../../responsible-gaming/">Responsible gaming</a> · <a href="../../sitemap/">Sitemap</a></nav>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> e.casino. All rights reserved. Educational only &mdash; no real-money gambling, no affiliate links. 18+. Not affiliated with any casino operator or any business named &ldquo;eCasino&rdquo; or &ldquo;E-Casino&rdquo;. <a href="../../disclaimer/">Trademark &amp; copyright disclosure</a>.</span>
+      <span><a href="https://web.works/contact" target="_blank" rel="noopener">Domain, sponsorship &amp; partnership inquiries</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/config.js?v=20261102" defer></script>
+<script src="../../assets/js/site.js?v=20261102" defer></script>
+
+</body>
+</html>
