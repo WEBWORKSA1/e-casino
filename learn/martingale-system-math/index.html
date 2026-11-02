@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Martingale System: Why Doubling Up Fails | e.casino</title>
+<meta name="description" content="Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.">
+<link rel="canonical" href="https://e.casino/learn/martingale-system-math/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#0a0f1c">
+<meta property="og:site_name" content="e.casino">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Martingale System: Why Doubling Up Fails (With the Math)">
+<meta property="og:description" content="Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.">
+<meta property="og:url" content="https://e.casino/learn/martingale-system-math/">
+<meta property="og:image" content="https://e.casino/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/logo.svg">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css?v=20261102">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('ec:theme'));}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "The Martingale System: Why Doubling Up Fails (With the Math)",
+"description": "Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.",
+"datePublished": "2026-11-02",
+"dateModified": "2026-11-02",
+"author": {
+"@type": "Organization",
+"name": "e.casino Editorial Team",
+"url": "https://e.casino/about/"
+},
+"publisher": {
+"@type": "Organization",
+"name": "e.casino",
+"url": "https://e.casino/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://e.casino/assets/img/logo.svg"
+}
+},
+"mainEntityOfPage": "https://e.casino/learn/martingale-system-math/",
+"image": "https://e.casino/assets/img/og-image.svg",
+"articleSection": "Casino Math",
+"isAccessibleForFree": true
+}</script><script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://e.casino/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Learn",
+"item": "https://e.casino/learn/"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "Casino Math",
+"item": "https://e.casino/learn/#casino-math"
+},
+{
+"@type": "ListItem",
+"position": 4,
+"name": "The Martingale System: Why Doubling Up Fails (With the Math)",
+"item": "https://e.casino/learn/martingale-system-math/"
+}
+]
+}</script>
+<script type="application/json" id="ec-meta">{
+"title": "The Martingale System: Why Doubling Up Fails",
+"h1": "The Martingale System: Why Doubling Up Fails (With the Math)",
+"description": "Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.",
+"category": "casino-math",
+"keywords": [
+"martingale system",
+"martingale betting strategy",
+"doubling strategy roulette",
+"martingale math",
+"martingale table limits",
+"negative progression"
+],
+"readingMinutes": 7,
+"updated": "2026-11-02",
+"summary": [
+"The Martingale doubles the bet after each loss so that one win recovers everything plus one base unit.",
+"With a $10 base bet and $1,270, seven straight losses on European even-money bets wipe you out; that happens 0.94% of the time.",
+"Expected value per series is about −$2.05, exactly the 2.70% house edge applied to the $75.94 wagered per series on average.",
+"Table limits and finite bankrolls make the rare loss certain to arrive eventually; no doubling pattern changes the edge."
+],
+"faq": [
+{
+"q": "Does the Martingale system work?",
+"a": "It works most of the time and fails catastrophically some of the time. On European roulette with a $10 base and $1,270, you win $10 in about 99.06% of series and lose $1,270 in about 0.94%, for an average of about −$2.05 per series."
+},
+{
+"q": "Why do casinos allow the Martingale?",
+"a": "Because it does not change the house edge. Every bet in the progression carries the same 2.70% or 5.26% edge, and table limits cap how far a player can double."
+},
+{
+"q": "Would the Martingale work with unlimited money?",
+"a": "Only in theory, and even then the expected size of the bet you would eventually need is infinite, because each doubling grows faster than the chance of reaching it shrinks. No real bankroll or table can support that."
+},
+{
+"q": "What are the odds of losing seven times in a row at roulette?",
+"a": "On a European wheel, an even-money bet loses with probability 19/37, so seven straight losses has probability (19/37)^7, about 0.94% from any given starting spin. Over a few hundred spins, a run like that becomes likely."
+}
+],
+"related": [
+"betting-systems-tested",
+"gamblers-fallacy",
+"risk-of-ruin-bankroll"
+],
+"tool": "roulette-simulator",
+"kind": "article",
+"slug": "martingale-system-math",
+"path": "/learn/martingale-system-math/",
+"crumbs": [
+[
+"Learn",
+"/learn/"
+],
+[
+"Casino Math",
+"/learn/#casino-math"
+],
+[
+"The Martingale System: Why Doubling Up Fails (With the Math)",
+"/learn/martingale-system-math/"
+]
+]
+}</script>
+</head>
+<body class=" is-article">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership &rarr;</a></div>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../" aria-label="e.casino home"><span>e<b>.</b>casino</span><small>Casino Math Academy</small></a>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../games/">Free Labs</a></li><li><a href="../../tools/">Tools</a></li><li><a href="../../videos/">Videos</a></li><li><a href="../../contests/">Contests</a></li><li><a href="../../responsible-gaming/">Play Safe</a></li></ul></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-gold btn-sm" href="../../partner/">Partner</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+</header>
+<main id="main">
+<div class="wrap section-tight">
+<div class="article-layout">
+<article>
+  <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../learn/">Learn</a></li><li><a href="../../learn/#casino-math">Casino Math</a></li></ol>
+  <div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">Math-checked</span><span class="badge">No affiliate links</span></div>
+  <h1>The Martingale System: Why Doubling Up Fails (With the Math)</h1>
+  <p class="lead">Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.</p>
+  <div class="article-meta"><span>By <a href="../../about/">e.casino Editorial Team</a></span><span>Updated <time datetime="2026-11-02">Nov 2, 2026</time></span><span>7 min read</span></div>
+  <div class="share mt1 no-print"><button class="btn btn-ghost btn-sm" data-share="x" type="button">Share on X</button><button class="btn btn-ghost btn-sm" data-share="facebook" type="button">Facebook</button><button class="btn btn-ghost btn-sm" data-share="linkedin" type="button">LinkedIn</button><button class="btn btn-ghost btn-sm" data-share="copy" type="button">Copy link</button></div>
+  <section class="takeaways" aria-label="Key takeaways"><h2>Key takeaways</h2><ul><li>The Martingale doubles the bet after each loss so that one win recovers everything plus one base unit.</li><li>With a $10 base bet and $1,270, seven straight losses on European even-money bets wipe you out; that happens 0.94% of the time.</li><li>Expected value per series is about −$2.05, exactly the 2.70% house edge applied to the $75.94 wagered per series on average.</li><li>Table limits and finite bankrolls make the rare loss certain to arrive eventually; no doubling pattern changes the edge.</li></ul></section>
+  <details class="toc toc-inline card"><summary><strong>On this page</strong></summary><ol class="mt1"><li><a href="#how-it-works">How the Martingale works</a></li><li><a href="#losing-streak-table">The table that breaks it</a></li><li><a href="#ev-per-series">The expected value of one series</a></li><li><a href="#how-often">How often the disaster arrives</a></li><li><a href="#limits">Table limits and the infinite-bankroll fantasy</a></li><li><a href="#variants">Variants do not fix it</a></li><li><a href="#bottom-line">The bottom line</a></li></ol></details>
+  <div class="prose">
+<!--ec:content-->
+<p class="lede">The Martingale system says: bet on an even-money outcome, double your bet after every loss, and go back to your base bet after a win. Each completed series nets exactly one base unit. It wins almost every time, which is the problem. The rare loss is so large that it wipes out hundreds of small wins, and the house edge on every dollar is untouched.</p>
+
+<h2 id="how-it-works">How the Martingale works</h2>
+<p>Take a $10 base bet on red. You lose $10, so you bet $20. You lose again, so you bet $40. This time red hits.</p>
+<p>Result: −$10 − $20 + $40 = <strong>+$10</strong>. However long the losing run, the next win covers all of it plus your original $10, because each bet equals the sum of every previous loss plus one unit.</p>
+<p>That sounds like a guaranteed profit. It would be, if you had unlimited money, the table had no maximum bet, and you had unlimited time. None of those is true.</p>
+
+<h2 id="losing-streak-table">The table that breaks it</h2>
+<p>Here is what a losing streak looks like on a European wheel, where an even-money bet loses with probability 19/37 (the 18 numbers of the other color plus the zero).</p>
+<div class="table-wrap"><table class="data">
+<caption>Martingale with a $10 base bet on European even-money bets</caption>
+<thead><tr><th>Losses in a row</th><th>Bet that just lost</th><th>Total lost so far</th><th>Chance of this many straight losses</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>$10</td><td>$10</td><td>51.35%</td></tr>
+<tr><td>2</td><td>$20</td><td>$30</td><td>26.37%</td></tr>
+<tr><td>3</td><td>$40</td><td>$70</td><td>13.54%</td></tr>
+<tr><td>4</td><td>$80</td><td>$150</td><td>6.95%</td></tr>
+<tr><td>5</td><td>$160</td><td>$310</td><td>3.57%</td></tr>
+<tr><td>6</td><td>$320</td><td>$630</td><td>1.83%</td></tr>
+<tr><td>7</td><td>$640</td><td>$1,270</td><td>0.94%</td></tr>
+<tr><td>8</td><td>$1,280</td><td>$2,550</td><td>0.48%</td></tr>
+<tr><td>10</td><td>$5,120</td><td>$10,230</td><td>0.13%</td></tr>
+</tbody>
+</table></div>
+<p>To chase a $10 profit, you need $1,270 to survive seven losses. Ten losses would require $10,230. The reward never changes; the risk doubles at every step.</p>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="ev-per-series">The expected value of one series</h2>
+<p>Say you bring $1,270, enough for seven bets: $10, $20, $40, $80, $160, $320 and $640. A series ends with either one win (+$10) or seven straight losses (−$1,270).</p>
+<div class="callout math"><strong>The math:</strong> P(7 straight losses) = (19/37)^7 ≈ 0.94%. So you win $10 with probability about 99.06% and lose $1,270 with probability about 0.94%. EV = 0.990584 × $10 − 0.009416 × $1,270 ≈ $9.906 − $11.958 ≈ <strong>−$2.05 per series</strong>.</div>
+<p>There is a neat cross-check. The amount you wager in a series is random: $10 if you win immediately, $30 if you win on the second bet, and so on. On average it comes to about $75.94. Multiply by the 1/37 house edge and you get $75.94 ÷ 37 ≈ $2.05. Same answer.</p>
+<div class="formula">Expected loss = house edge × expected total wagered = 1/37 × $75.94 ≈ $2.05</div>
+<p>That identity is the core of it. The Martingale does not touch the edge. It just reshapes your results into many small wins and one rare, crushing loss, with the same average cost as any other way of betting the same total.</p>
+<p>On an American wheel the picture is worse. An even-money bet loses with probability 20/38, so seven straight losses happen about 1.12% of the time, and EV per series drops to 0.98881 × $10 − 0.01119 × $1,270 ≈ −$4.32. That is the 5.26% edge applied to about $82 wagered per series on average.</p>
+
+<h3>Why it feels like it works</h3>
+<p>A Martingale player usually walks away from a short session a winner. That is not luck in the usual sense; it is the system working exactly as designed. With a 99.06% chance of winning each series, about 85% of one-hour sessions (roughly 17 series) contain no disaster at all.</p>
+<p>The trouble is that winning sessions are small and memorable, while the losing session is large and rare. A player who wins $50 on four nights and loses $1,270 on the fifth has a story about four good nights and one bad one. The ledger says −$1,070.</p>
+
+<h2 id="how-often">How often the disaster arrives</h2>
+<p>A series lasts about 2.04 spins on average, so at a commonly cited 35 spins an hour you complete roughly 17 series an hour.</p>
+<ul>
+<li><strong>Chance of at least one wipeout in an hour:</strong> 1 − 0.9906^17 ≈ <strong>15%</strong>.</li>
+<li><strong>Chance of a run of seven or more losses within 200 spins</strong> (under six hours): about <strong>60%</strong>.</li>
+<li><strong>Expected result per hour:</strong> about 17.2 series × −$2.05 ≈ <strong>−$35</strong>.</li>
+</ul>
+<p>This is why the Martingale feels brilliant at first. In a typical hour without a wipeout you are up around $170, collected $10 at a time. Then one bad hour takes $1,270.</p>
+<p>Now try to double your $1,270 by completing 127 series. The chance of getting through all 127 without a seven-loss streak is 0.9906^127 ≈ <strong>30%</strong>. You would still have whatever you had won before a wipeout, so your full chance of doubling is a bit higher than that, but it cannot beat the simplest alternative: one $1,270 bet on red, which doubles you 48.65% of the time. In an unfavorable game, grinding toward a target in small wins gives the edge more time to work. It is not the safe route it appears to be.</p>
+
+<h2 id="limits">Table limits and the infinite-bankroll fantasy</h2>
+<p>Real tables cap your bet. At a table with a $10 minimum and a $500 maximum, you cannot place the seventh bet of $640. The progression stops after six losses, so you risk $630 to win $10.</p>
+<p>P(6 straight losses) = (19/37)^6 ≈ 1.83%, and EV per series = 0.981664 × $10 − 0.018336 × $630 ≈ −$1.74. The numbers shift, but the sign never does.</p>
+<p>What if there were no limits and no budget? You would win $10 with certainty, but the expected size of your final bet would be infinite. Each step multiplies the bet by 2 and the chance of reaching that step by 19/37, and 2 × 19/37 = 38/37 is greater than 1, so the expected amount at risk grows without bound. You would need unlimited money to make $10.</p>
+<div class="callout warn"><strong>Reality check:</strong> Table limits are not the reason the Martingale fails. They just make the inevitable loss arrive sooner. With a finite bankroll, any doubling system has the same negative expected value as flat betting the same total.</div>
+
+<h2 id="variants">Variants do not fix it</h2>
+<p>People patch the Martingale in many ways: the Grand Martingale (double plus one unit), capping the number of doublings, or reversing it to double after wins. Each changes the shape of the results. None changes the formula: expected loss equals the house edge times the total wagered.</p>
+<p>The Grand Martingale wins a little more per completed series, but its bets climb faster: $10, $30, $70, $150, $310, $630. The same $1,270 now survives only six losses instead of seven. A capped Martingale loses less per disaster but suffers disasters more often. The <a href="../../learn/betting-systems-tested/">betting systems comparison</a> walks through Fibonacci, D'Alembert, Labouchère and Paroli with the same math.</p>
+<p>The Martingale is also the <a href="../../learn/gamblers-fallacy/">gambler's fallacy</a> turned into a staking plan. Its appeal rests on the feeling that a win is due after several losses. The wheel disagrees: every spin is 18/37, no matter what came before.</p>
+<div class="callout tip"><strong>Tip:</strong> The free <a href="../../games/roulette-simulator/">roulette simulator</a> can run the Martingale over thousands of spins with no money involved. Watch the slow climb and the sudden cliff.</div>
+
+<h2 id="bottom-line">The bottom line</h2>
+<p>The Martingale trades a high probability of a small win for a small probability of a huge loss. On European roulette with a $10 base and $1,270, that trade is worth about −$2.05 per series, exactly the house edge on the money you put through.</p>
+<p>No doubling pattern can turn a negative-edge bet into a positive one. The losing streak is not a freak event; over enough spins it is close to certain. If you ever find yourself doubling to win back losses with real money, that is a signal to stop, and <a href="../../responsible-gaming/#help">help is available</a>.</p>
+<!--/ec:content-->
+  </div>
+  <div class="band mt3"><div><span class="badge badge-brand">Free lab · no money</span><h2 class="mt1" style="margin-top:10px">Roulette &amp; Betting-System Simulator</h2><p class="muted mb0">Run thousands of spins and watch Martingale meet the house edge. Put this guide into practice right now.</p></div><div><a class="btn btn-primary btn-lg btn-block" href="../../games/roulette-simulator/">🎡 Open the lab</a></div></div>
+  <section class="faq mt3"><h2>Frequently asked questions</h2><details><summary>Does the Martingale system work?</summary><div><p>It works most of the time and fails catastrophically some of the time. On European roulette with a $10 base and $1,270, you win $10 in about 99.06% of series and lose $1,270 in about 0.94%, for an average of about −$2.05 per series.</p></div></details><details><summary>Why do casinos allow the Martingale?</summary><div><p>Because it does not change the house edge. Every bet in the progression carries the same 2.70% or 5.26% edge, and table limits cap how far a player can double.</p></div></details><details><summary>Would the Martingale work with unlimited money?</summary><div><p>Only in theory, and even then the expected size of the bet you would eventually need is infinite, because each doubling grows faster than the chance of reaching it shrinks. No real bankroll or table can support that.</p></div></details><details><summary>What are the odds of losing seven times in a row at roulette?</summary><div><p>On a European wheel, an even-money bet loses with probability 19/37, so seven straight losses has probability (19/37)^7, about 0.94% from any given starting spin. Over a few hundred spins, a run like that becomes likely.</p></div></details></section>
+  <div class="ad-slot" data-slot="articleEnd"></div>
+  <div class="card mt3 author-box"><div class="author-avatar" aria-hidden="true">e</div><div><strong>e.casino Editorial Team</strong><p class="muted mb0" style="font-size:.93rem">Every figure in this guide is derived from first principles or standard published game math and cross-checked in our simulators. We take no money from casinos and publish no affiliate links. Spotted an error? <a href="../../contact/?topic=Correction">Send a correction</a> — see our <a href="../../editorial-policy/">editorial policy</a>.</p></div></div>
+  <section class="mt3"><h2>Keep learning</h2><div class="grid g3"><a class="card card-link" href="../../learn/betting-systems-tested/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">8 min</span></div><h3>Betting Systems Tested: Fibonacci, D&#x27;Alembert, Labouchère and Paroli</h3><p class="muted">Four classic roulette betting systems, from Fibonacci to Paroli, put to the math test. Each one reshapes your results, and none of them changes the house edge.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/gamblers-fallacy/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>The Gambler&#x27;s Fallacy: Why Due Numbers Don&#x27;t Exist</h3><p class="muted">After 10 blacks in a row, red is still 18 in 37. Learn why independent outcomes have no memory, why streaks are normal, and when the past really does matter.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/risk-of-ruin-bankroll/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">8 min</span></div><h3>Bankroll Math and Risk of Ruin: How Long Will Your Money Last?</h3><p class="muted">How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.</p><span class="go">Read guide &rarr;</span></a></div></section>
+  <div class="rg-strip mt3"><span class="age-badge">18+</span><span><strong>Educational content only.</strong> e.casino offers no real-money gambling. If gambling is causing problems for you or someone you know, <a href="../../responsible-gaming/#help">free, confidential help is available 24/7</a>.</span></div>
+</article>
+<aside class="sidebar" aria-label="Sidebar">
+  <div class="card toc" id="side-toc"><strong>On this page</strong></div>
+  <a class="card card-link" href="../../games/roulette-simulator/"><div class="card-icon" aria-hidden="true">🎡</div><h3>Roulette &amp; Betting-System Simulator</h3><p class="muted">Run thousands of spins and watch Martingale meet the house edge.</p><span class="go">Open &rarr;</span></a>
+  <div class="ad-slot" data-slot="sidebar"></div>
+  <div class="card card-gold"><span class="badge badge-gold">Free kit</span><h3 class="mt1">Printable strategy card</h3><p class="muted" style="font-size:.92rem">Blackjack chart + house-edge cheat sheet.</p><a class="btn btn-gold btn-sm btn-block" href="../../academy/">Get it free</a></div>
+</aside>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div id="footer-rich"></div>
+    <nav class="footer-links" aria-label="Footer"><a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../editorial-policy/">Editorial policy</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer &amp; trademarks</a> · <a href="../../cookies/">Cookies</a> · <a href="../../responsible-gaming/">Responsible gaming</a> · <a href="../../sitemap/">Sitemap</a></nav>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> e.casino. All rights reserved. Educational only &mdash; no real-money gambling, no affiliate links. 18+. Not affiliated with any casino operator or any business named &ldquo;eCasino&rdquo; or &ldquo;E-Casino&rdquo;. <a href="../../disclaimer/">Trademark &amp; copyright disclosure</a>.</span>
+      <span><a href="https://web.works/contact" target="_blank" rel="noopener">Domain, sponsorship &amp; partnership inquiries</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/config.js?v=20261102" defer></script>
+<script src="../../assets/js/site.js?v=20261102" defer></script>
+
+</body>
+</html>
