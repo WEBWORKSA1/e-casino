@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /blueprint/
+Disallow: /src/
+Disallow: /content/
+Disallow: /embed/
+Disallow: /thank-you/
+
+Sitemap: https://e.casino/sitemap.xml
