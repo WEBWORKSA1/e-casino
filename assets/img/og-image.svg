@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="a" cx="15%" cy="20%" r="55%"><stop offset="0" stop-color="#1fd187" stop-opacity=".35"/><stop offset="1" stop-color="#1fd187" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b" cx="90%" cy="10%" r="45%"><stop offset="0" stop-color="#f5c65b" stop-opacity=".3"/><stop offset="1" stop-color="#f5c65b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#1fd187"/><stop offset="1" stop-color="#f5c65b"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0f1c"/><rect width="1200" height="630" fill="url(#a)"/><rect width="1200" height="630" fill="url(#b)"/>
+  <text x="80" y="150" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="800" fill="#e9edf6">e<tspan fill="#1fd187">.</tspan>casino</text>
+  <text x="80" y="290" font-family="Arial,Helvetica,sans-serif" font-size="84" font-weight="800" fill="#e9edf6">Casino math,</text>
+  <text x="80" y="380" font-family="Arial,Helvetica,sans-serif" font-size="84" font-weight="800" fill="url(#t)">decoded.</text>
+  <text x="80" y="450" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#9aa7c2">Free strategy labs · odds calculators · honest guides</text>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#e9edf6">
+    <rect x="80" y="520" width="320" height="52" rx="26" fill="none" stroke="#2f4064" stroke-width="2"/><text x="240" y="554" text-anchor="middle">No real-money gambling</text>
+    <rect x="416" y="520" width="250" height="52" rx="26" fill="none" stroke="#2f4064" stroke-width="2"/><text x="541" y="554" text-anchor="middle">No affiliate links</text>
+    <rect x="682" y="520" width="170" height="52" rx="26" fill="none" stroke="#2f4064" stroke-width="2"/><text x="767" y="554" text-anchor="middle">100% free</text>
+  </g>
+  <g transform="translate(860 170) rotate(-12)"><rect width="150" height="210" rx="16" fill="#fdfdfb"/><text x="18" y="62" font-family="Arial" font-size="48" font-weight="800" fill="#111">A</text><text x="18" y="118" font-family="Arial" font-size="44" fill="#111">♠</text></g>
+  <g transform="translate(980 150) rotate(4)"><rect width="150" height="210" rx="16" fill="#fdfdfb"/><text x="18" y="62" font-family="Arial" font-size="48" font-weight="800" fill="#c8102e">K</text><text x="18" y="118" font-family="Arial" font-size="44" fill="#c8102e">♥</text></g>
+</svg>
