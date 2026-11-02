@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embedded odds-converter | e.casino</title>
+<meta name="description" content="Embeddable version of the e.casino odds-converter.">
+<link rel="canonical" href="https://e.casino/embed/odds-converter/">
+<meta name="robots" content="noindex,follow">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#0a0f1c">
+<meta property="og:site_name" content="e.casino">
+<meta property="og:type" content="website">
+<meta property="og:title" content="odds-converter">
+<meta property="og:description" content="Embeddable version of the e.casino odds-converter.">
+<meta property="og:url" content="https://e.casino/embed/odds-converter/">
+<meta property="og:image" content="https://e.casino/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/logo.svg">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css?v=20261102">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('ec:theme'));}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<!-- ads disabled on this page -->
+
+<script type="application/json" id="ec-meta">{
+"path": "/embed/odds-converter/",
+"title": "Embedded odds-converter",
+"h1": "odds-converter",
+"description": "Embeddable version of the e.casino odds-converter.",
+"embedOf": "/tools/odds-converter/",
+"ads": false,
+"noindex": true,
+"bodyClass": "embed",
+"scripts": [
+"labs/odds.js"
+],
+"kind": "page"
+}</script>
+</head>
+<body class="embed">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership &rarr;</a></div>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../" aria-label="e.casino home"><span>e<b>.</b>casino</span><small>Casino Math Academy</small></a>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../games/">Free Labs</a></li><li><a href="../../tools/">Tools</a></li><li><a href="../../videos/">Videos</a></li><li><a href="../../contests/">Contests</a></li><li><a href="../../responsible-gaming/">Play Safe</a></li></ul></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-gold btn-sm" href="../../partner/">Partner</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+</header>
+<main id="main">
+<!--ec:content-->
+<section class="page-hero">
+  <div class="wrap">
+    <ol class="breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../tools/">Tools</a></li></ol>
+    <div class="tags"><span class="badge badge-brand">Free tool</span><span class="badge">Embeddable</span></div>
+    <h1>Odds Converter &amp; Vig Calculator</h1>
+    <p class="lead">Type odds in any format and see the rest — plus the probability the price implies, and how much margin the bookmaker built in.</p>
+  </div>
+</section>
+<section class="section-tight">
+  <div class="wrap lab">
+    <div class="stack">
+      <div class="panel">
+        <h2>Convert odds</h2>
+        <div class="form-row">
+          <div class="field"><label for="oc-dec">Decimal</label><input id="oc-dec" inputmode="decimal" value="2.50"></div>
+          <div class="field"><label for="oc-frac">Fractional</label><input id="oc-frac" value="3/2"></div>
+          <div class="field"><label for="oc-am">American</label><input id="oc-am" value="+150"></div>
+          <div class="field"><label for="oc-imp">Implied probability (%)</label><input id="oc-imp" inputmode="decimal" value="40"></div>
+        </div>
+        <div class="form-row mt1">
+          <div class="field"><label for="oc-stake">Stake ($)</label><input id="oc-stake" type="number" value="100" min="0" step="1"></div>
+          <div class="field"><span class="label">If it wins</span><div class="kpi"><b id="oc-profit">—</b><span id="oc-return">profit</span></div></div>
+        </div>
+        <p class="muted mt1 mb0" id="oc-msg" style="font-size:.92rem"></p>
+      </div>
+      <div class="panel">
+        <h2>Bookmaker margin (vig) &amp; fair odds</h2>
+        <p class="muted" style="font-size:.9rem">Enter the odds for every outcome of one market (decimal or American, 2–3 outcomes).</p>
+        <div class="form-row">
+          <div class="field"><label for="vg-a">Outcome A</label><input id="vg-a" value="-110"></div>
+          <div class="field"><label for="vg-b">Outcome B</label><input id="vg-b" value="-110"></div>
+          <div class="field"><label for="vg-c">Outcome C (optional)</label><input id="vg-c" value=""></div>
+        </div>
+        <div id="vg-out" class="mt1"></div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="panel">
+        <h2>Quick reference</h2>
+        <div class="table-wrap" style="margin:0"><table class="data"><thead><tr><th>Decimal</th><th>Fractional</th><th>American</th><th>Implied</th></tr></thead><tbody id="oc-ref"></tbody></table></div>
+      </div>
+      <div class="ad-slot" data-slot="lab"></div>
+    </div>
+  </div>
+</section>
+<section class="section-tight"><div class="wrap narrow prose">
+  <h2>The conversions</h2>
+  <div class="formula">Implied probability = 1 ÷ decimal odds
+Decimal = fractional + 1        (3/2 → 2.50)
+American +X → decimal = 1 + X/100        American −X → decimal = 1 + 100/X
+Overround = Σ implied probabilities − 100%</div>
+  <p>A standard −110 / −110 line implies 52.38% for each side — 104.76% in total. That extra 4.76% is the overround; it is why a bettor needs to win 52.38% of such bets just to break even. Full explanation in <a href="../../learn/odds-formats-explained/">Odds Formats Explained</a> and <a href="../../learn/sports-betting-math/">Sports Betting Math</a>.</p>
+  <div class="callout warn"><strong>Reality check:</strong> implied probability is the price, not the truth. A bet only has positive expected value if your honest estimate of the probability exceeds the implied figure — and the margin makes that rare.</div>
+</div></section>
+<!--/ec:content-->
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div id="footer-rich"></div>
+    <nav class="footer-links" aria-label="Footer"><a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../editorial-policy/">Editorial policy</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer &amp; trademarks</a> · <a href="../../cookies/">Cookies</a> · <a href="../../responsible-gaming/">Responsible gaming</a> · <a href="../../sitemap/">Sitemap</a></nav>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> e.casino. All rights reserved. Educational only &mdash; no real-money gambling, no affiliate links. 18+. Not affiliated with any casino operator or any business named &ldquo;eCasino&rdquo; or &ldquo;E-Casino&rdquo;. <a href="../../disclaimer/">Trademark &amp; copyright disclosure</a>.</span>
+      <span><a href="https://web.works/contact" target="_blank" rel="noopener">Domain, sponsorship &amp; partnership inquiries</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/config.js?v=20261102" defer></script>
+<script src="../../assets/js/site.js?v=20261102" defer></script>
+<script src="../../assets/js/labs/odds.js?v=20261102" defer></script>
+</body>
+</html>
