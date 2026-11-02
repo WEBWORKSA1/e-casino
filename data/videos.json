@@ -1,0 +1,128 @@
+[
+ {
+  "id": "zTsRGQj6VT4",
+  "title": "Gambling with the Martingale Strategy",
+  "channel": "Numberphile",
+  "tag": "math",
+  "why": "Why doubling after losses can't beat the edge"
+ },
+ {
+  "id": "A5w-dEgIU1M",
+  "title": "The Trillion Dollar Equation",
+  "channel": "Veritasium",
+  "tag": "blackjack",
+  "why": "Includes Ed Thorp's journey from blackjack to markets"
+ },
+ {
+  "id": "7cjIWMUgPtY",
+  "title": "The Magic Economics of Gambling",
+  "channel": "Wendover Productions",
+  "tag": "psychology",
+  "why": "How casinos engineer profit from every square foot"
+ },
+ {
+  "id": "tP-Ipsat90c",
+  "title": "Randomness is Random",
+  "channel": "Numberphile",
+  "tag": "math",
+  "why": "Why real randomness looks streakier than we expect"
+ },
+ {
+  "id": "VpuN8vCQ--M",
+  "title": "Law of large numbers",
+  "channel": "Khan Academy",
+  "tag": "math",
+  "why": "The theorem behind every casino's business model"
+ },
+ {
+  "id": "Ne2lmAZI4-I",
+  "title": "Gambler's Ruin (lecture)",
+  "channel": "MIT OpenCourseWare",
+  "tag": "math",
+  "why": "The classic probability problem, from MIT"
+ },
+ {
+  "id": "-6HxjiW_KwA",
+  "title": "Making Probability Mathematical",
+  "channel": "PBS Infinite Series",
+  "tag": "history",
+  "why": "How a gambling question gave birth to probability theory"
+ },
+ {
+  "id": "PhqyZbiH3UY",
+  "title": "The Fastest Way to Memorize Blackjack Basic Strategy",
+  "channel": "Blackjack Apprenticeship",
+  "tag": "blackjack",
+  "why": "Memory tricks to pair with our trainer"
+ },
+ {
+  "id": "WkGldDHLb5k",
+  "title": "How To Count Cards: Take Back the Edge at Blackjack",
+  "channel": "Blackjack Apprenticeship",
+  "tag": "blackjack",
+  "why": "Hi-Lo counting explained step by step"
+ },
+ {
+  "id": "QRxOsWQFNR4",
+  "title": "How to Play Craps — The Basics and Rules",
+  "channel": "Wizard of Odds",
+  "tag": "math",
+  "why": "Craps rules and bets, explained by a gaming mathematician"
+ },
+ {
+  "id": "K9QlZACMT18",
+  "title": "Baccarat Analysis",
+  "channel": "Wizard of Odds",
+  "tag": "math",
+  "why": "The math of Banker, Player and Tie"
+ },
+ {
+  "id": "b7bStIQovcY",
+  "title": "Tuomas Sandholm: Poker and Game Theory",
+  "channel": "Lex Fridman",
+  "tag": "poker",
+  "why": "How AI solved heads-up no-limit poker"
+ },
+ {
+  "id": "688bkcpe55U",
+  "title": "Slot machines: The big gamble",
+  "channel": "60 Minutes",
+  "tag": "slots",
+  "why": "An investigation into how modern slots are designed"
+ },
+ {
+  "id": "GUeTnQeIFCE",
+  "title": "Addiction by Design: from Slot Machines to Internet Gambling",
+  "channel": "Dr. Natasha Schüll (lecture)",
+  "tag": "slots",
+  "why": "A researcher on machine design and player behavior"
+ },
+ {
+  "id": "BF5SzIN63w8",
+  "title": "Inside the brain of a gambling addict",
+  "channel": "BBC News",
+  "tag": "responsible",
+  "why": "What neuroscience shows about problem gambling"
+ },
+ {
+  "id": "7AN3VLLlkdI",
+  "title": "The fall and rise of a gambling addict",
+  "channel": "TEDx Talks",
+  "tag": "responsible",
+  "why": "A personal story of losing everything and recovering"
+ },
+ {
+  "id": "Sbygrr5q2Wg",
+  "title": "The Secretive Book That Names All the Cheaters in Vegas",
+  "channel": "Half as Interesting",
+  "tag": "history",
+  "why": "Nevada's famous exclusion list"
+ },
+ {
+  "id": "Mynmdu7cLfE",
+  "title": "Who Killed Bugsy Siegel?",
+  "channel": "Vegas PBS",
+  "tag": "history",
+  "why": "The mob era that built the Las Vegas Strip"
+ }
+]
