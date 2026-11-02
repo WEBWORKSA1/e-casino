@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bankroll Math and Risk of Ruin: How Long Money Lasts | e.casino</title>
+<meta name="description" content="How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.">
+<link rel="canonical" href="https://e.casino/learn/risk-of-ruin-bankroll/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#0a0f1c">
+<meta property="og:site_name" content="e.casino">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bankroll Math and Risk of Ruin: How Long Will Your Money Last?">
+<meta property="og:description" content="How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.">
+<meta property="og:url" content="https://e.casino/learn/risk-of-ruin-bankroll/">
+<meta property="og:image" content="https://e.casino/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/logo.svg">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css?v=20261102">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('ec:theme'));}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Bankroll Math and Risk of Ruin: How Long Will Your Money Last?",
+"description": "How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.",
+"datePublished": "2026-11-02",
+"dateModified": "2026-11-02",
+"author": {
+"@type": "Organization",
+"name": "e.casino Editorial Team",
+"url": "https://e.casino/about/"
+},
+"publisher": {
+"@type": "Organization",
+"name": "e.casino",
+"url": "https://e.casino/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://e.casino/assets/img/logo.svg"
+}
+},
+"mainEntityOfPage": "https://e.casino/learn/risk-of-ruin-bankroll/",
+"image": "https://e.casino/assets/img/og-image.svg",
+"articleSection": "Casino Math",
+"isAccessibleForFree": true
+}</script><script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://e.casino/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Learn",
+"item": "https://e.casino/learn/"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "Casino Math",
+"item": "https://e.casino/learn/#casino-math"
+},
+{
+"@type": "ListItem",
+"position": 4,
+"name": "Bankroll Math and Risk of Ruin: How Long Will Your Money Last?",
+"item": "https://e.casino/learn/risk-of-ruin-bankroll/"
+}
+]
+}</script>
+<script type="application/json" id="ec-meta">{
+"title": "Bankroll Math and Risk of Ruin: How Long Money Lasts",
+"h1": "Bankroll Math and Risk of Ruin: How Long Will Your Money Last?",
+"description": "How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.",
+"category": "casino-math",
+"keywords": [
+"risk of ruin",
+"bankroll management",
+"gamblers ruin",
+"how long will my bankroll last",
+"bankroll calculator",
+"session bankroll"
+],
+"readingMinutes": 8,
+"updated": "2026-11-02",
+"summary": [
+"Two numbers drive every bankroll: the drift (expected loss per bet) and the swing (standard deviation per bet).",
+"With $10 bets on European red for four hours, a $100 bankroll goes broke about 51% of the time, a $300 bankroll about 2.4% of the time.",
+"Trying to turn $100 into $200 on European red succeeds 48.6% of the time with one bet but only 0.45% of the time with $1 bets.",
+"Even with a genuine 1% edge, a 50-unit bankroll has about a 37% risk of ruin; advantage play needs deep pockets."
+],
+"faq": [
+{
+"q": "What is risk of ruin?",
+"a": "Risk of ruin is the probability of losing your entire bankroll before reaching a goal or stopping point. It depends on the house edge, the size of each bet relative to the bankroll, and the variance of the game."
+},
+{
+"q": "Do smaller bets make my money last longer?",
+"a": "Yes, smaller bets usually let you play longer before going broke. But in a negative-edge game, more bets also means more total wagered, so smaller bets lower your chance of reaching a fixed profit target."
+},
+{
+"q": "What is the gambler's ruin formula?",
+"a": "For even-money bets with win probability p and loss probability q, starting with i units and aiming for N units, the chance of reaching N first is (1 − (q/p)^i) ÷ (1 − (q/p)^N). In a fair game this simplifies to i ÷ N."
+},
+{
+"q": "How big should a gambling budget be?",
+"a": "Start with the expected loss for your planned play, then add a buffer for normal swings, roughly two standard deviations. Most importantly, it should be money you have already decided you can afford to lose."
+}
+],
+"related": [
+"law-of-large-numbers-casino",
+"martingale-system-math",
+"setting-gambling-budget"
+],
+"tool": "bankroll-calculator",
+"kind": "article",
+"slug": "risk-of-ruin-bankroll",
+"path": "/learn/risk-of-ruin-bankroll/",
+"crumbs": [
+[
+"Learn",
+"/learn/"
+],
+[
+"Casino Math",
+"/learn/#casino-math"
+],
+[
+"Bankroll Math and Risk of Ruin: How Long Will Your Money Last?",
+"/learn/risk-of-ruin-bankroll/"
+]
+]
+}</script>
+</head>
+<body class=" is-article">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership &rarr;</a></div>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../" aria-label="e.casino home"><span>e<b>.</b>casino</span><small>Casino Math Academy</small></a>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../games/">Free Labs</a></li><li><a href="../../tools/">Tools</a></li><li><a href="../../videos/">Videos</a></li><li><a href="../../contests/">Contests</a></li><li><a href="../../responsible-gaming/">Play Safe</a></li></ul></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-gold btn-sm" href="../../partner/">Partner</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+</header>
+<main id="main">
+<div class="wrap section-tight">
+<div class="article-layout">
+<article>
+  <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../learn/">Learn</a></li><li><a href="../../learn/#casino-math">Casino Math</a></li></ol>
+  <div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">Math-checked</span><span class="badge">No affiliate links</span></div>
+  <h1>Bankroll Math and Risk of Ruin: How Long Will Your Money Last?</h1>
+  <p class="lead">How long a gambling budget lasts depends on edge, bet size and variance. Use the classic ruin formula and worked roulette examples to see your real odds.</p>
+  <div class="article-meta"><span>By <a href="../../about/">e.casino Editorial Team</a></span><span>Updated <time datetime="2026-11-02">Nov 2, 2026</time></span><span>8 min read</span></div>
+  <div class="share mt1 no-print"><button class="btn btn-ghost btn-sm" data-share="x" type="button">Share on X</button><button class="btn btn-ghost btn-sm" data-share="facebook" type="button">Facebook</button><button class="btn btn-ghost btn-sm" data-share="linkedin" type="button">LinkedIn</button><button class="btn btn-ghost btn-sm" data-share="copy" type="button">Copy link</button></div>
+  <section class="takeaways" aria-label="Key takeaways"><h2>Key takeaways</h2><ul><li>Two numbers drive every bankroll: the drift (expected loss per bet) and the swing (standard deviation per bet).</li><li>With $10 bets on European red for four hours, a $100 bankroll goes broke about 51% of the time, a $300 bankroll about 2.4% of the time.</li><li>Trying to turn $100 into $200 on European red succeeds 48.6% of the time with one bet but only 0.45% of the time with $1 bets.</li><li>Even with a genuine 1% edge, a 50-unit bankroll has about a 37% risk of ruin; advantage play needs deep pockets.</li></ul></section>
+  <details class="toc toc-inline card"><summary><strong>On this page</strong></summary><ol class="mt1"><li><a href="#drift-and-swing">The two numbers that run your bankroll</a></li><li><a href="#session-survival">Will your bankroll survive four hours?</a></li><li><a href="#gamblers-ruin">The gambler&#x27;s ruin formula</a></li><li><a href="#positive-edge">Risk of ruin, even with an edge</a></li><li><a href="#budget">Turning the math into a budget</a></li><li><a href="#bottom-line">The bottom line</a></li></ol></details>
+  <div class="prose">
+<!--ec:content-->
+<p class="lede">How long your money lasts depends on three things: the house edge, the size of your bets, and how wildly the game swings. The edge decides where you are heading; the swings decide how bumpy the road is and how likely you are to hit zero along the way. Risk of ruin is the math that puts a number on that.</p>
+
+<h2 id="drift-and-swing">The two numbers that run your bankroll</h2>
+<p>Every bet has a <strong>drift</strong>, its expected loss, and a <strong>swing</strong>, its standard deviation. For a $10 bet on red in European roulette:</p>
+<ul>
+<li>Drift: −$10 × 1/37 ≈ −$0.27 per bet.</li>
+<li>Swing: about $10 per bet, since each spin ends close to $10 up or $10 down.</li>
+</ul>
+<p>Over many bets, drift adds up in a straight line while swing grows with the square root of the number of bets.</p>
+<div class="formula">After N bets: expected result = N × drift, standard deviation = swing × √N</div>
+<p>At a commonly cited 35 spins an hour, one hour of $10 red bets has an expected result of −$9.46 and a standard deviation of $59.14. Over four hours (140 spins), it is −$37.84 with a standard deviation of $118.28.</p>
+<p>That is the key fact about short sessions: the swing is several times larger than the drift. Over four hours, the luck component dwarfs the edge. Over hundreds of hours, it reverses, as explained in the <a href="../../learn/law-of-large-numbers-casino/">law of large numbers guide</a>.</p>
+
+<h2 id="session-survival">Will your bankroll survive four hours?</h2>
+<p>Now add a hard floor: if your money hits zero, the night is over. Here is what happens to three bankrolls betting $10 on European red for up to 140 spins, worked out exactly by tracking every possible path spin by spin.</p>
+<div class="table-wrap"><table class="data">
+<caption>$10 bets on European red for up to 140 spins (about four hours)</caption>
+<thead><tr><th>Starting bankroll</th><th>In units of $10</th><th>Chance of going broke</th><th>Chance of finishing ahead</th></tr></thead>
+<tbody>
+<tr><td>$100</td><td>10</td><td>51.1%</td><td>31.2%</td></tr>
+<tr><td>$200</td><td>20</td><td>15.2%</td><td>34.3%</td></tr>
+<tr><td>$300</td><td>30</td><td>2.4%</td><td>34.3%</td></tr>
+</tbody>
+</table></div>
+<p>Look at the last column. A bigger bankroll barely changes your chance of finishing ahead. What it changes is your chance of being knocked out early. With $100 against $10 bets, you have only a ten-loss cushion, and a coin-flip chance of busting before the four hours are up.</p>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="gamblers-ruin">The gambler's ruin formula</h2>
+<p>A classic problem asks: if you start with some money and stop when you either double it or lose it all, what is your chance of success? For even-money bets, with win probability p, loss probability q = 1 − p, a start of i betting units and a target of N units:</p>
+<div class="formula">P(reach N before 0) = (1 − r^i) ÷ (1 − r^N), where r = q ÷ p</div>
+<p>On a European wheel, r = (19/37) ÷ (18/37) = 19/18 ≈ 1.0556. In a fair game r = 1 and the formula simplifies to i ÷ N, so a fair 50/50 bet doubles you exactly half the time, whatever your bet size.</p>
+<p>Here is a $100 bankroll aiming for $200 on European red, at different bet sizes:</p>
+<div class="table-wrap"><table class="data">
+<caption>Turning $100 into $200 on European red: chance of success by bet size</caption>
+<thead><tr><th>Bet size</th><th>Chance of reaching $200</th><th>Average number of spins</th><th>Expected loss</th></tr></thead>
+<tbody>
+<tr><td>$100 (one bet)</td><td>48.6%</td><td>1</td><td>$2.70</td></tr>
+<tr><td>$50</td><td>47.3%</td><td>4</td><td>$5.40</td></tr>
+<tr><td>$25</td><td>44.6%</td><td>16</td><td>$10.77</td></tr>
+<tr><td>$10</td><td>36.8%</td><td>98</td><td>$26.39</td></tr>
+<tr><td>$5</td><td>25.3%</td><td>365</td><td>$49.35</td></tr>
+<tr><td>$1</td><td>0.45%</td><td>3,667</td><td>$99.11</td></tr>
+</tbody>
+</table></div>
+<div class="callout math"><strong>The math:</strong> With $10 bets, i = 10 and N = 20, so P = (1 − 1.0556^10) ÷ (1 − 1.0556^20) = 1 ÷ (1 + 1.0556^10) ≈ 1 ÷ 2.717 ≈ 36.8%. The expected loss column is the house edge times the expected total wagered: 98 spins × $10 ÷ 37 ≈ $26.39, which matches $100 − (36.8% × $200).</div>
+<p>The pattern surprises most people. In a negative-edge game, small bets give the edge more spins to work, so they make reaching a target less likely, not more. With $1 bets, you would play for over 100 hours on average and almost certainly lose the $100.</p>
+<p>That is not a recommendation to bet big. Every row has a negative expected result. Small bets buy more playing time; they do not buy better odds.</p>
+
+<h3>What a win target really does</h3>
+<p>The same formula shows what happens when you set a stop-win target. Start with $200, bet $10 on European red, and quit when you either reach the target or go broke:</p>
+<ul>
+<li><strong>Target +$50:</strong> you get there about 68.0% of the time, after about 111 spins on average. Expected loss: $29.90.</li>
+<li><strong>Target +$100:</strong> about 48.0%, after about 208 spins. Expected loss: $56.13.</li>
+<li><strong>Target +$200:</strong> about 25.3%, after about 365 spins. Expected loss: $98.70.</li>
+</ul>
+<p>A modest target makes a winning night common, which feels like a strategy. It is not. Two times in three you win $50, and one time in three you lose $200. The expected loss is still exactly 2.70% of everything wagered, and a bigger target simply means more spins and a bigger expected loss.</p>
+
+<h2 id="positive-edge">Risk of ruin, even with an edge</h2>
+<p>Advantage players, such as skilled <a href="../../learn/card-counting-explained/">card counters</a>, face ruin too. Take a hypothetical even-money game with a genuine 1% edge for the player: you win 50.5% of the time. If you never stop, the chance of eventually losing a bankroll of B units is:</p>
+<div class="formula">Risk of ruin = (q ÷ p)^B ≈ e^(−2 × edge × B ÷ variance per bet)</div>
+<p>With q ÷ p = 0.495 ÷ 0.505 ≈ 0.9802:</p>
+<ul>
+<li><strong>25 units:</strong> about 60.7% risk of ruin</li>
+<li><strong>50 units:</strong> about 36.8%</li>
+<li><strong>100 units:</strong> about 13.5%</li>
+<li><strong>200 units:</strong> about 1.8%</li>
+<li><strong>400 units:</strong> about 0.03%</li>
+</ul>
+<p>Even with the math on your side, a thin bankroll gets wiped out more often than not. That is why real advantage play needs a bankroll of hundreds of betting units, and why it is much harder than it looks. With a negative edge and no stopping point, the risk of ruin is simply 100%.</p>
+
+<h2 id="budget">Turning the math into a budget</h2>
+<p>If you choose to gamble for entertainment, bankroll math gives you a practical way to set limits:</p>
+<ol>
+<li><strong>Estimate the expected cost:</strong> bet × bets per hour × hours × house edge. Four hours of $10 European red: $10 × 140 × 2.70% ≈ $38.</li>
+<li><strong>Add a buffer for swings:</strong> about two standard deviations. For 140 spins, 2 × $118 ≈ $237, so a budget near $300 covers a bad-but-normal night. With $300, the table above shows only a 2.4% chance of going broke in four hours.</li>
+<li><strong>Decide in advance that the money is spent.</strong> A loss limit does not change the house edge, but it caps the damage and makes the number real before you start.</li>
+</ol>
+<div class="callout tip"><strong>Tip:</strong> Run your own numbers in the free <a href="../../tools/bankroll-calculator/">bankroll calculator</a>, which shows expected loss, variance, the chance of being ahead and risk of ruin for your game and bet size.</div>
+<div class="callout warn"><strong>Reality check:</strong> No bankroll size makes a negative-edge game profitable. A bigger bankroll only means it takes longer for the edge to win. The <a href="../../learn/setting-gambling-budget/">budget guide</a> covers how to set limits you will actually keep.</div>
+
+<h2 id="bottom-line">The bottom line</h2>
+<p>Your bankroll is pushed down by the drift and shaken by the swing. Over short sessions the swing dominates, which is why a bigger bankroll mostly protects you from early knockouts rather than improving your odds of winning.</p>
+<p>The gambler's ruin formula shows the uncomfortable truth: in a casino game, more bets means less chance of reaching a target, and with no stopping point, ruin is certain. Use the math to size a budget you can afford, and if keeping to it gets hard, <a href="../../responsible-gaming/#help">help is available</a>.</p>
+<!--/ec:content-->
+  </div>
+  <div class="band mt3"><div><span class="badge badge-brand">Free lab · no money</span><h2 class="mt1" style="margin-top:10px">Bankroll &amp; Risk-of-Ruin Calculator</h2><p class="muted mb0">Variance, chance of finishing ahead and risk of ruin. Put this guide into practice right now.</p></div><div><a class="btn btn-primary btn-lg btn-block" href="../../tools/bankroll-calculator/">🛡 Open the lab</a></div></div>
+  <section class="faq mt3"><h2>Frequently asked questions</h2><details><summary>What is risk of ruin?</summary><div><p>Risk of ruin is the probability of losing your entire bankroll before reaching a goal or stopping point. It depends on the house edge, the size of each bet relative to the bankroll, and the variance of the game.</p></div></details><details><summary>Do smaller bets make my money last longer?</summary><div><p>Yes, smaller bets usually let you play longer before going broke. But in a negative-edge game, more bets also means more total wagered, so smaller bets lower your chance of reaching a fixed profit target.</p></div></details><details><summary>What is the gambler&#x27;s ruin formula?</summary><div><p>For even-money bets with win probability p and loss probability q, starting with i units and aiming for N units, the chance of reaching N first is (1 − (q/p)^i) ÷ (1 − (q/p)^N). In a fair game this simplifies to i ÷ N.</p></div></details><details><summary>How big should a gambling budget be?</summary><div><p>Start with the expected loss for your planned play, then add a buffer for normal swings, roughly two standard deviations. Most importantly, it should be money you have already decided you can afford to lose.</p></div></details></section>
+  <div class="ad-slot" data-slot="articleEnd"></div>
+  <div class="card mt3 author-box"><div class="author-avatar" aria-hidden="true">e</div><div><strong>e.casino Editorial Team</strong><p class="muted mb0" style="font-size:.93rem">Every figure in this guide is derived from first principles or standard published game math and cross-checked in our simulators. We take no money from casinos and publish no affiliate links. Spotted an error? <a href="../../contact/?topic=Correction">Send a correction</a> — see our <a href="../../editorial-policy/">editorial policy</a>.</p></div></div>
+  <section class="mt3"><h2>Keep learning</h2><div class="grid g3"><a class="card card-link" href="../../learn/law-of-large-numbers-casino/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>The Law of Large Numbers: Why the Casino Wins Over Time</h3><p class="muted">The law of large numbers explains why a small house edge becomes a near-certain casino profit. See how your odds of being ahead shrink as the bets pile up.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/martingale-system-math/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>The Martingale System: Why Doubling Up Fails (With the Math)</h3><p class="muted">Double after every loss and you win $10 almost every time, until one streak costs $1,270. The full Martingale math on European roulette, step by step.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/setting-gambling-budget/" data-cat="responsible-gaming"><div class="tags"><span class="badge badge-brand">Responsible Gaming</span><span class="badge">7 min</span></div><h3>How to Set an Entertainment Budget for a Casino Trip</h3><p class="muted">Budget a casino trip like any night out: estimate the expected cost with the theo formula, add a cushion for swings and set firm limits for every session.</p><span class="go">Read guide &rarr;</span></a></div></section>
+  <div class="rg-strip mt3"><span class="age-badge">18+</span><span><strong>Educational content only.</strong> e.casino offers no real-money gambling. If gambling is causing problems for you or someone you know, <a href="../../responsible-gaming/#help">free, confidential help is available 24/7</a>.</span></div>
+</article>
+<aside class="sidebar" aria-label="Sidebar">
+  <div class="card toc" id="side-toc"><strong>On this page</strong></div>
+  <a class="card card-link" href="../../tools/bankroll-calculator/"><div class="card-icon" aria-hidden="true">🛡</div><h3>Bankroll &amp; Risk-of-Ruin Calculator</h3><p class="muted">Variance, chance of finishing ahead and risk of ruin.</p><span class="go">Open &rarr;</span></a>
+  <div class="ad-slot" data-slot="sidebar"></div>
+  <div class="card card-gold"><span class="badge badge-gold">Free kit</span><h3 class="mt1">Printable strategy card</h3><p class="muted" style="font-size:.92rem">Blackjack chart + house-edge cheat sheet.</p><a class="btn btn-gold btn-sm btn-block" href="../../academy/">Get it free</a></div>
+</aside>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div id="footer-rich"></div>
+    <nav class="footer-links" aria-label="Footer"><a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../editorial-policy/">Editorial policy</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer &amp; trademarks</a> · <a href="../../cookies/">Cookies</a> · <a href="../../responsible-gaming/">Responsible gaming</a> · <a href="../../sitemap/">Sitemap</a></nav>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> e.casino. All rights reserved. Educational only &mdash; no real-money gambling, no affiliate links. 18+. Not affiliated with any casino operator or any business named &ldquo;eCasino&rdquo; or &ldquo;E-Casino&rdquo;. <a href="../../disclaimer/">Trademark &amp; copyright disclosure</a>.</span>
+      <span><a href="https://web.works/contact" target="_blank" rel="noopener">Domain, sponsorship &amp; partnership inquiries</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/config.js?v=20261102" defer></script>
+<script src="../../assets/js/site.js?v=20261102" defer></script>
+
+</body>
+</html>
