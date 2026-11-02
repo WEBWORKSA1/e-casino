@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Betting Math: Vig, Overround and Bookmaker Profit | e.casino</title>
+<meta name="description" content="Why a standard -110 line needs a 52.38% win rate to break even, how overround and parlays build in margin, and why even skilled bettors drown in variance.">
+<link rel="canonical" href="https://e.casino/learn/sports-betting-math/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#0a0f1c">
+<meta property="og:site_name" content="e.casino">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sports Betting Math: Vig, Overround and Why Bookmakers Profit">
+<meta property="og:description" content="Why a standard -110 line needs a 52.38% win rate to break even, how overround and parlays build in margin, and why even skilled bettors drown in variance.">
+<meta property="og:url" content="https://e.casino/learn/sports-betting-math/">
+<meta property="og:image" content="https://e.casino/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/logo.svg">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css?v=20261102">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('ec:theme'));}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Sports Betting Math: Vig, Overround and Why Bookmakers Profit",
+"description": "Why a standard -110 line needs a 52.38% win rate to break even, how overround and parlays build in margin, and why even skilled bettors drown in variance.",
+"datePublished": "2026-11-02",
+"dateModified": "2026-11-02",
+"author": {
+"@type": "Organization",
+"name": "e.casino Editorial Team",
+"url": "https://e.casino/about/"
+},
+"publisher": {
+"@type": "Organization",
+"name": "e.casino",
+"url": "https://e.casino/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://e.casino/assets/img/logo.svg"
+}
+},
+"mainEntityOfPage": "https://e.casino/learn/sports-betting-math/",
+"image": "https://e.casino/assets/img/og-image.svg",
+"articleSection": "Casino Math",
+"isAccessibleForFree": true
+}</script><script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://e.casino/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Learn",
+"item": "https://e.casino/learn/"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "Casino Math",
+"item": "https://e.casino/learn/#casino-math"
+},
+{
+"@type": "ListItem",
+"position": 4,
+"name": "Sports Betting Math: Vig, Overround and Why Bookmakers Profit",
+"item": "https://e.casino/learn/sports-betting-math/"
+}
+]
+}</script>
+<script type="application/json" id="ec-meta">{
+"title": "Sports Betting Math: Vig, Overround and Bookmaker Profit",
+"h1": "Sports Betting Math: Vig, Overround and Why Bookmakers Profit",
+"description": "Why a standard -110 line needs a 52.38% win rate to break even, how overround and parlays build in margin, and why even skilled bettors drown in variance.",
+"category": "casino-math",
+"keywords": [
+"sports betting math",
+"vig",
+"vigorish",
+"overround",
+"break even percentage",
+"parlay math"
+],
+"readingMinutes": 8,
+"updated": "2026-11-02",
+"summary": [
+"At −110 on both sides, you risk $110 to win $100, so you must win 52.38% of bets just to break even.",
+"A balanced −110/−110 book keeps $10 of every $220 wagered, a margin of about 4.55% of handle; the implied probabilities add to 104.76%.",
+"Parlays multiply the margin: a coin-flip four-leg parlay at −110 per leg has an expected loss of about 17% of the stake.",
+"Even a genuine 53% bettor at −110 is behind after 500 bets about 38% of the time, so short records say little about skill."
+],
+"faq": [
+{
+"q": "What is the vig in sports betting?",
+"a": "The vig, or vigorish, is the bookmaker's built-in margin. On a standard −110 line you risk $110 to win $100, and that extra $10 is what lets the bookmaker profit when both sides are bet equally."
+},
+{
+"q": "What win rate do you need to break even at −110?",
+"a": "You need to win 110 ÷ 210 = 52.38% of your bets. At that rate, the $100 wins exactly cover the $110 losses on average."
+},
+{
+"q": "Why are parlays considered bad bets?",
+"a": "Each leg carries its own margin, and a parlay multiplies them together. Two coin-flip legs at −110 have an expected loss of about 8.9% of the stake, and four legs about 17%."
+},
+{
+"q": "How do you remove the vig to find fair odds?",
+"a": "Convert each price to implied probability, add them up, and divide each probability by the total. For a −150/+130 line, 60.00% and 43.48% sum to 103.48%, giving fair probabilities of about 57.98% and 42.02%."
+}
+],
+"related": [
+"odds-formats-explained",
+"expected-value-for-beginners",
+"law-of-large-numbers-casino"
+],
+"tool": "odds-converter",
+"kind": "article",
+"slug": "sports-betting-math",
+"path": "/learn/sports-betting-math/",
+"crumbs": [
+[
+"Learn",
+"/learn/"
+],
+[
+"Casino Math",
+"/learn/#casino-math"
+],
+[
+"Sports Betting Math: Vig, Overround and Why Bookmakers Profit",
+"/learn/sports-betting-math/"
+]
+]
+}</script>
+</head>
+<body class=" is-article">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership &rarr;</a></div>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../" aria-label="e.casino home"><span>e<b>.</b>casino</span><small>Casino Math Academy</small></a>
+    <nav class="primary" aria-label="Primary"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../games/">Free Labs</a></li><li><a href="../../tools/">Tools</a></li><li><a href="../../videos/">Videos</a></li><li><a href="../../contests/">Contests</a></li><li><a href="../../responsible-gaming/">Play Safe</a></li></ul></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-gold btn-sm" href="../../partner/">Partner</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+</header>
+<main id="main">
+<div class="wrap section-tight">
+<div class="article-layout">
+<article>
+  <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../learn/">Learn</a></li><li><a href="../../learn/#casino-math">Casino Math</a></li></ol>
+  <div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">Math-checked</span><span class="badge">No affiliate links</span></div>
+  <h1>Sports Betting Math: Vig, Overround and Why Bookmakers Profit</h1>
+  <p class="lead">Why a standard -110 line needs a 52.38% win rate to break even, how overround and parlays build in margin, and why even skilled bettors drown in variance.</p>
+  <div class="article-meta"><span>By <a href="../../about/">e.casino Editorial Team</a></span><span>Updated <time datetime="2026-11-02">Nov 2, 2026</time></span><span>8 min read</span></div>
+  <div class="share mt1 no-print"><button class="btn btn-ghost btn-sm" data-share="x" type="button">Share on X</button><button class="btn btn-ghost btn-sm" data-share="facebook" type="button">Facebook</button><button class="btn btn-ghost btn-sm" data-share="linkedin" type="button">LinkedIn</button><button class="btn btn-ghost btn-sm" data-share="copy" type="button">Copy link</button></div>
+  <section class="takeaways" aria-label="Key takeaways"><h2>Key takeaways</h2><ul><li>At −110 on both sides, you risk $110 to win $100, so you must win 52.38% of bets just to break even.</li><li>A balanced −110/−110 book keeps $10 of every $220 wagered, a margin of about 4.55% of handle; the implied probabilities add to 104.76%.</li><li>Parlays multiply the margin: a coin-flip four-leg parlay at −110 per leg has an expected loss of about 17% of the stake.</li><li>Even a genuine 53% bettor at −110 is behind after 500 bets about 38% of the time, so short records say little about skill.</li></ul></section>
+  <details class="toc toc-inline card"><summary><strong>On this page</strong></summary><ol class="mt1"><li><a href="#the-vig">The vig on a standard −110 line</a></li><li><a href="#break-even">The 52.38% problem</a></li><li><a href="#point-spreads">Point spreads: turning mismatches into coin flips</a></li><li><a href="#overround">Overround on uneven lines, and how to strip it out</a></li><li><a href="#parlays">Parlays: the margin multiplies</a></li><li><a href="#how-bookmakers-profit">How bookmakers actually make money</a></li><li><a href="#variance">Even skilled bettors drown in variance</a></li><li><a href="#bottom-line">The bottom line</a></li></ol></details>
+  <div class="prose">
+<!--ec:content-->
+<p class="lede">Bookmakers do not need to know who will win. They need prices that add up to more than 100%. On the standard −110 line, you risk $110 to win $100, which means you must win 52.38% of the time just to break even. That small gap, applied to an enormous volume of bets, is how sports betting works as a business.</p>
+
+<h2 id="the-vig">The vig on a standard −110 line</h2>
+<p>Take a game priced at −110 on both sides. In American odds, −110 means you stake $110 to win $100. (If those formats are new, start with <a href="../../learn/odds-formats-explained/">odds formats explained</a>.)</p>
+<p>Now imagine the bookmaker takes exactly $110 on each side. Total handle: $220. Whichever side wins collects $210, their $110 stake plus $100 profit. The bookmaker keeps the remaining <strong>$10</strong>, whatever the result.</p>
+<div class="formula">Bookmaker margin = $10 ÷ $220 ≈ 4.55% of total handle</div>
+<p>That $10 is the vig, short for vigorish, also called juice. It is the sports-betting equivalent of the <a href="../../learn/house-edge-explained/">house edge</a>.</p>
+<p>You can see the same margin by converting prices to implied probabilities. Each −110 side implies 110 ÷ 210 = 52.38%. Together they add to <strong>104.76%</strong>. A fair market would add to exactly 100%; the extra 4.76 points is called the overround.</p>
+
+<h2 id="break-even">The 52.38% problem</h2>
+<p>At −110, a winning bet earns $100 and a losing bet costs $110. To break even, your wins have to cover your losses:</p>
+<div class="callout math"><strong>The math:</strong> Break even when p × $100 = (1 − p) × $110, so 210p = 110 and p = 110 ÷ 210 ≈ 52.38%. A bettor who picks winners exactly half the time has EV = 0.5 × $100 − 0.5 × $110 = −$5 per $110 bet, a loss of about 4.55% of every stake.</div>
+<div class="table-wrap"><table class="data">
+<caption>Expected result at −110 by win rate</caption>
+<thead><tr><th>Win rate</th><th>EV per $110 bet</th><th>EV over 100 bets ($11,000 wagered)</th></tr></thead>
+<tbody>
+<tr><td>50%</td><td>−$5.00</td><td>−$500</td></tr>
+<tr><td>52%</td><td>−$0.80</td><td>−$80</td></tr>
+<tr><td>52.38%</td><td>$0.00</td><td>$0</td></tr>
+<tr><td>53%</td><td>+$1.30</td><td>+$130</td></tr>
+<tr><td>55%</td><td>+$5.50</td><td>+$550</td></tr>
+</tbody>
+</table></div>
+<p>Picking 52% winners sounds respectable. At −110 it still loses money. The vig turns a slightly better-than-average forecaster into a losing bettor.</p>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="point-spreads">Point spreads: turning mismatches into coin flips</h2>
+<p>Why do so many lines sit at −110 on both sides? Because of the point spread. Instead of asking who will win, a spread asks whether the favorite wins by more than a set margin.</p>
+<p>If a strong team is listed at −7.5, a bet on them wins only if they win by 8 or more. A bet on the underdog at +7.5 wins if the underdog loses by 7 or fewer, or wins outright. The bookmaker moves the number until it believes each side is close to a 50% proposition, then charges the same vig on both.</p>
+<p>The half point exists to prevent ties. With a spread of exactly 7, a seven-point win is a push and stakes are returned. Totals (over/under bets on combined points) work the same way.</p>
+<p>The result is that a huge share of the market comes down to the same arithmetic: roughly 50/50 events, priced to require 52.38%.</p>
+
+<h2 id="overround">Overround on uneven lines, and how to strip it out</h2>
+<p>Most games are not priced as coin flips. Take a moneyline of −150 on the favorite and +130 on the underdog.</p>
+<ul>
+<li>−150 implies 150 ÷ 250 = 60.00%.</li>
+<li>+130 implies 100 ÷ 230 = 43.48%.</li>
+<li>Total: 103.48%, an overround of 3.48 points.</li>
+</ul>
+<p>To estimate the fair probabilities, divide each by the total: 60.00 ÷ 1.0348 ≈ 57.98% for the favorite and 43.48 ÷ 1.0348 ≈ 42.02% for the underdog. If action were balanced in proportion to those prices, the bookmaker's margin would be 1 − 1 ÷ 1.0348 ≈ 3.36% of handle.</p>
+<p>This proportional method is the simplest way to remove the vig. It assumes the margin is spread evenly across outcomes. In practice a bookmaker may shade one side more than the other, so treat the result as an estimate, not the truth. The free <a href="../../tools/odds-converter/">odds converter</a> shows implied probabilities for any price.</p>
+<p>The more outcomes a market has, the more room there is for margin to hide. On a three-way market or a long list of futures, add up every implied probability before drawing any conclusion about value.</p>
+
+<h2 id="parlays">Parlays: the margin multiplies</h2>
+<p>A parlay links several bets together; all must win. The payout multiplies, and so does the margin. A −110 leg is decimal 1.9091, so an n-leg parlay pays 1.9091^n. If each leg is a true 50/50, the fair payout would be 2^n.</p>
+<div class="table-wrap"><table class="data">
+<caption>Parlays of −110 legs, each a true 50/50</caption>
+<thead><tr><th>Legs</th><th>Chance all win</th><th>Payout (decimal / American)</th><th>Fair payout</th><th>Expected loss</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>50%</td><td>1.909 / −110</td><td>2.00 / +100</td><td>4.5%</td></tr>
+<tr><td>2</td><td>25%</td><td>3.645 / about +264</td><td>4.00 / +300</td><td>8.9%</td></tr>
+<tr><td>3</td><td>12.5%</td><td>6.958 / about +596</td><td>8.00 / +700</td><td>13.0%</td></tr>
+<tr><td>4</td><td>6.25%</td><td>13.28 / about +1228</td><td>16.00 / +1500</td><td>17.0%</td></tr>
+<tr><td>6</td><td>1.56%</td><td>48.41 / about +4741</td><td>64.00 / +6300</td><td>24.4%</td></tr>
+</tbody>
+</table></div>
+<p>Expected loss is 1 − (chance all win × payout). For two legs: 1 − 0.25 × 3.645 ≈ 8.9%. Each extra leg compounds the vig. A three-leg coin-flip parlay at 13.0% is close to the baccarat Tie bet's 14.36%, and six legs at 24.4% is approaching keno territory. And this table assumes the parlay pays the full multiplied odds; a parlay paying less than that is worse still.</p>
+
+<h2 id="how-bookmakers-profit">How bookmakers actually make money</h2>
+<p>The textbook picture is a perfectly balanced book: equal money on both sides, a guaranteed $10 per $220, no risk. Real bookmaking is messier.</p>
+<p>Bookmakers set prices they believe are accurate, then adjust them as money arrives, to manage how much they stand to lose on any one result. They do not need every game balanced. As long as their prices are accurate on average, the overround gives them a positive expected profit on every bet, and the <a href="../../learn/law-of-large-numbers-casino/">law of large numbers</a> turns that into steady income across thousands of events.</p>
+<p>In other words, a bookmaker is a casino whose house edge is set by prices instead of rules. The edge per bet is modest; the volume is enormous.</p>
+
+<h2 id="variance">Even skilled bettors drown in variance</h2>
+<p>Suppose someone really can pick 53% winners at −110. Their edge is real but thin: +$1.30 per $110 bet, about 1.18%. The standard deviation of each bet is about $105.</p>
+<ul>
+<li><strong>After 500 bets</strong> ($55,000 wagered): expected profit +$650, standard deviation about $2,344. Chance of being behind anyway: about <strong>38%</strong>.</li>
+<li><strong>After 2,000 bets:</strong> chance of still being behind is about <strong>29%</strong>.</li>
+</ul>
+<p>Now flip it. A bettor with no skill at all, winning exactly 50% on average, finishes ahead after 100 bets about <strong>31%</strong> of the time, after 500 bets about <strong>15%</strong>, and after 2,000 bets under <strong>2%</strong>.</p>
+<p>So a winning record over a season or two says very little. Luck alone produces plenty of winning streaks, and a genuine edge can hide behind long losing ones. Those percentages are exact binomial calculations, not estimates.</p>
+<div class="callout warn"><strong>Reality check:</strong> Beating a −110 market requires being right well over 52.38% of the time across thousands of bets, against prices set by professionals. That is a very high bar, and a short hot streak is not evidence that you clear it.</div>
+
+<h2 id="bottom-line">The bottom line</h2>
+<p>Sports betting margins come from prices that add up to more than 100%. On a −110 line that means a 52.38% break-even rate and a bookmaker margin of about 4.55% of handle; parlays multiply it, and variance hides it for a long time.</p>
+<p>Understanding the math is useful because it shows the true price of a bet, not because it makes betting a plan. If you bet on sports, set a strict budget and treat losses as the cost of entertainment. If it starts to feel like something you need to win back, <a href="../../responsible-gaming/#help">help is available</a>.</p>
+<!--/ec:content-->
+  </div>
+  <div class="band mt3"><div><span class="badge badge-brand">Free lab · no money</span><h2 class="mt1" style="margin-top:10px">Odds Converter &amp; Vig Calculator</h2><p class="muted mb0">Decimal, fractional, American and implied probability. Put this guide into practice right now.</p></div><div><a class="btn btn-primary btn-lg btn-block" href="../../tools/odds-converter/">⇄ Open the lab</a></div></div>
+  <section class="faq mt3"><h2>Frequently asked questions</h2><details><summary>What is the vig in sports betting?</summary><div><p>The vig, or vigorish, is the bookmaker&#x27;s built-in margin. On a standard −110 line you risk $110 to win $100, and that extra $10 is what lets the bookmaker profit when both sides are bet equally.</p></div></details><details><summary>What win rate do you need to break even at −110?</summary><div><p>You need to win 110 ÷ 210 = 52.38% of your bets. At that rate, the $100 wins exactly cover the $110 losses on average.</p></div></details><details><summary>Why are parlays considered bad bets?</summary><div><p>Each leg carries its own margin, and a parlay multiplies them together. Two coin-flip legs at −110 have an expected loss of about 8.9% of the stake, and four legs about 17%.</p></div></details><details><summary>How do you remove the vig to find fair odds?</summary><div><p>Convert each price to implied probability, add them up, and divide each probability by the total. For a −150/+130 line, 60.00% and 43.48% sum to 103.48%, giving fair probabilities of about 57.98% and 42.02%.</p></div></details></section>
+  <div class="ad-slot" data-slot="articleEnd"></div>
+  <div class="card mt3 author-box"><div class="author-avatar" aria-hidden="true">e</div><div><strong>e.casino Editorial Team</strong><p class="muted mb0" style="font-size:.93rem">Every figure in this guide is derived from first principles or standard published game math and cross-checked in our simulators. We take no money from casinos and publish no affiliate links. Spotted an error? <a href="../../contact/?topic=Correction">Send a correction</a> — see our <a href="../../editorial-policy/">editorial policy</a>.</p></div></div>
+  <section class="mt3"><h2>Keep learning</h2><div class="grid g3"><a class="card card-link" href="../../learn/odds-formats-explained/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>Odds Formats Explained: Decimal, Fractional, American and Implied Probability</h3><p class="muted">Decimal, fractional and American odds are three ways to write one price. Learn to convert between them, find implied probability and spot the built-in margin.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/expected-value-for-beginners/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>Expected Value (EV) for Beginners: The Math of Every Bet</h3><p class="muted">Expected value is the average result of a bet repeated forever. Learn the one-line formula, then use it on roulette, dice, insurance and lottery tickets.</p><span class="go">Read guide &rarr;</span></a>
+<a class="card card-link" href="../../learn/law-of-large-numbers-casino/" data-cat="casino-math"><div class="tags"><span class="badge badge-brand">Casino Math</span><span class="badge">7 min</span></div><h3>The Law of Large Numbers: Why the Casino Wins Over Time</h3><p class="muted">The law of large numbers explains why a small house edge becomes a near-certain casino profit. See how your odds of being ahead shrink as the bets pile up.</p><span class="go">Read guide &rarr;</span></a></div></section>
+  <div class="rg-strip mt3"><span class="age-badge">18+</span><span><strong>Educational content only.</strong> e.casino offers no real-money gambling. If gambling is causing problems for you or someone you know, <a href="../../responsible-gaming/#help">free, confidential help is available 24/7</a>.</span></div>
+</article>
+<aside class="sidebar" aria-label="Sidebar">
+  <div class="card toc" id="side-toc"><strong>On this page</strong></div>
+  <a class="card card-link" href="../../tools/odds-converter/"><div class="card-icon" aria-hidden="true">⇄</div><h3>Odds Converter &amp; Vig Calculator</h3><p class="muted">Decimal, fractional, American and implied probability.</p><span class="go">Open &rarr;</span></a>
+  <div class="ad-slot" data-slot="sidebar"></div>
+  <div class="card card-gold"><span class="badge badge-gold">Free kit</span><h3 class="mt1">Printable strategy card</h3><p class="muted" style="font-size:.92rem">Blackjack chart + house-edge cheat sheet.</p><a class="btn btn-gold btn-sm btn-block" href="../../academy/">Get it free</a></div>
+</aside>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div id="footer-rich"></div>
+    <nav class="footer-links" aria-label="Footer"><a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../editorial-policy/">Editorial policy</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer &amp; trademarks</a> · <a href="../../cookies/">Cookies</a> · <a href="../../responsible-gaming/">Responsible gaming</a> · <a href="../../sitemap/">Sitemap</a></nav>
+    <div class="footer-legal">
+      <span>&copy; <span data-year>2026</span> e.casino. All rights reserved. Educational only &mdash; no real-money gambling, no affiliate links. 18+. Not affiliated with any casino operator or any business named &ldquo;eCasino&rdquo; or &ldquo;E-Casino&rdquo;. <a href="../../disclaimer/">Trademark &amp; copyright disclosure</a>.</span>
+      <span><a href="https://web.works/contact" target="_blank" rel="noopener">Domain, sponsorship &amp; partnership inquiries</a></span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/config.js?v=20261102" defer></script>
+<script src="../../assets/js/site.js?v=20261102" defer></script>
+
+</body>
+</html>
