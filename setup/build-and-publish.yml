@@ -1,0 +1,74 @@
+name: Build, refresh & publish
+
+# e.casino self-updating workflow.
+# INSTALL: on GitHub, open the repo > Add file > Create new file, name it
+#   .github/workflows/build-and-publish.yml
+# and paste this file's contents. Commit to main. That's it.
+#
+# What it does (daily at 06:23 UTC, on every push to main, and on demand):
+#   1. Refreshes data/news.json from public news feeds (promotional items filtered out).
+#   2. Renders PNG social/app images from the SVG sources (first run only).
+#   3. Rebuilds every page, the search index and sitemap.xml with fresh dates.
+#   4. Commits the result to main and asks GitHub Pages to republish.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Refresh news feed
+        run: python3 scripts/update_feeds.py || echo "::warning::Feed refresh failed; keeping previous data"
+
+      - name: Render PNG images from SVG (first run only)
+        run: |
+          if [ ! -f assets/img/og-image.png ] || [ ! -f assets/img/logo-512.png ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin fonts-dejavu-core >/dev/null || true
+            command -v rsvg-convert && rsvg-convert -w 1200 -h 630 assets/img/og-image.svg -o assets/img/og-image.png || true
+            command -v rsvg-convert && rsvg-convert -w 512 -h 512 assets/img/logo.svg -o assets/img/logo-512.png || true
+          fi
+
+      - name: Build static site
+        run: python3 scripts/build.py
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "CHANGED=0" >> "$GITHUB_ENV"
+          else
+            git commit -m "chore(site): automated refresh $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push origin HEAD:main && break
+              sleep $((i * 5))
+            done
+            echo "CHANGED=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Ask GitHub Pages to republish
+        if: env.CHANGED == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
